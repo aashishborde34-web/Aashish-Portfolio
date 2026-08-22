@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Contact Aashish Borde for web development, programming and project-related inquiries.">
+
+    <meta name="author" content="Aashish Borde">
+
+    <title>Contact Me | Aashish Borde</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav aria-label="Main Navigation">
+
+            <h1>Aashish Borde</h1>
+
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="projects.html">Projects</a>
+                </li>
+
+                <li>
+                    <a href="contact.html" aria-current="page">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <section aria-labelledby="contact-title">
+
+            <h2 id="contact-title">Contact Me</h2>
+
+            <p>
+                If you would like to get in touch with me,
+                please fill out the form below.
+            </p>
+
+
+            <!-- Accessible Contact Form -->
+            <form action="#" method="post" aria-labelledby="contact-title">
+
+                <!-- Name -->
+                <div>
+                    <label for="name">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        autocomplete="name"
+                        required
+                        aria-required="true"
+                    >
+                </div>
+
+
+                <!-- Email -->
+                <div>
+                    <label for="email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required
+                        aria-required="true"
+                    >
+                </div>
+
+
+                <!-- Subject -->
+                <div>
+                    <label for="subject">Subject</label>
+
+                    <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        required
+                        aria-required="true"
+                    >
+                </div>
+
+
+                <!-- Message -->
+                <div>
+                    <label for="message">Message</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        required
+                        aria-required="true"
+                    ></textarea>
+                </div>
+
+
+                <!-- Submit -->
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 Aashish Borde. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
