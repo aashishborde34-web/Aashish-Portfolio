@@ -391,3 +391,82 @@ button:focus-visible {
     outline: 3px solid var(--primary-color);
     outline-offset: 3px;
 }
+
+/* ==============================
+   To-Do List
+================================= */
+
+#todo-form {
+    display: flex;
+    gap: 10px;
+    margin: 25px 0;
+    flex-wrap: wrap;
+}
+
+#task-input {
+    flex: 1;
+    min-width: 220px;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: var(--surface-color);
+    color: var(--text-color);
+}
+
+.todo-filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.todo-filters button,
+#todo-form button,
+#task-list button {
+    padding: 9px 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+#task-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--surface-color);
+}
+
+#task-list li span {
+    flex: 1;
+}
+
+@media (max-width: 600px) {
+
+    #todo-form {
+        flex-direction: column;
+    }
+
+    #task-input {
+        width: 100%;
+    }
+
+    #todo-form button {
+        width: 100%;
+    }
+
+    #task-list li {
+        flex-wrap: wrap;
+    }
+
+}
